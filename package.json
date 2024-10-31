@@ -1,0 +1,34 @@
+{
+  "name": "piron-test",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@nuxt/fonts": "^0.7.1",
+    "@nuxt/image": "^1.7.0",
+    "@nuxt/ui": "^2.17.0",
+    "@panzoom/panzoom": "^4.5.1",
+    "@pinia/nuxt": "^0.5.1",
+    "@vueuse/motion": "^2.2.3",
+    "nuxt": "^3.12.3",
+    "nuxt-svgo": "^4.0.1",
+    "pinia": "^2.1.7",
+    "vite-plugin-pug": "^0.3.2",
+    "vue": "latest",
+    "vue3-lottie": "^3.3.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/color-mode": "^3.4.2",
+    "@pinia-plugin-persistedstate/nuxt": "^1.2.1",
+    "@vue/language-plugin-pug": "^2.0.24",
+    "dayjs-nuxt": "^2.1.9",
+    "nuxt-lodash": "^2.5.3",
+    "sass": "^1.77.6"
+  }
+}
