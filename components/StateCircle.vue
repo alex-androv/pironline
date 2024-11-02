@@ -17,37 +17,36 @@ defineProps<Props>()
 
 <style lang="sass" scoped>
 .state-circle
-  width: 60px
-  height: 64px
+  width: 84px
+  height: 87px
   position: relative
 
 .semicircle
-  width: 60px
-  height: 30px
-  border: 2px solid #2f363d
+  width: 84px
+  height: 42px
+  border: 1px solid #33C078
   position: absolute
   left: 0
   transition: background-color 0.35s, border-color 0.35s
 
   &.top
     top: 0
-    border-radius: 30px 30px 0 0
-    border-bottom: none
+    border-radius: 42px 42px 0 0
     display: flex
     align-items: center
     justify-content: center
     
     span
       margin-top: 8px
+      font-size: 18px
       color: #fff
 
   &.bottom
     bottom: 0
-    border-radius: 0 0 30px 30px
-    border-top: none
-    margin-top: 2px
+    border-radius: 0 0 42px 42px
+    margin-top: 3px
 
   &.filled
-    background-color: #00b341
-    border-color: #00b341
+    background-color: #33C078
+    border-color: #33C078
 </style>

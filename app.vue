@@ -10,7 +10,10 @@
 <style lang="sass">
 .app-container
   min-height: 100vh
-  background-color: #1c2128
+  background-color: #202932
+  display: flex
+  align-items: center
+  justify-content: center
 
 .split-layout
   display: grid
