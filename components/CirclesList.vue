@@ -48,17 +48,14 @@ const sortOptions = [
  { 
    label: 'По алфавиту',
    value: 'alphabet',
-   icon: 'i-heroicons-pencil-square'
  },
  { 
    label: 'По цвету',
    value: 'color',
-   icon: 'i-heroicons-pencil-square'
  },
  { 
    label: 'По цвету и алфавиту',
    value: 'colorAndAlphabet',
-   icon: 'i-heroicons-pencil-square'
  }
 ]
 
