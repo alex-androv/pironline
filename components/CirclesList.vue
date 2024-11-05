@@ -17,8 +17,7 @@
      v-model="selectedSort"
      :options="sortOptions"
      placeholder="Сортировка"
-     :ui="uiConfig"
-     :class="$style.sortSelect"
+
    )
 
  .circles-container
@@ -62,31 +61,6 @@ const sortOptions = [
    icon: 'i-heroicons-pencil-square'
  }
 ]
-
-const uiConfig = {
- base: 'relative',
- button: 'bg-white dark:bg-gray-900 hover:bg-[#E6FFFC]',
- container: 'w-full relative',
- width: 'w-full',
- height: 'h-10',
- rounded: 'rounded-lg',
- ring: 'focus:ring-0',
- padding: 'px-3 py-2',
- icon: {
-   base: 'flex-shrink-0 text-gray-400 dark:text-gray-500',
-   selected: 'text-gray-400',
-   active: 'text-gray-400',
-   inactive: 'text-gray-400'
- },
- option: {
-   base: 'relative flex items-center gap-2 p-2 cursor-pointer select-none',
-   active: 'text-gray-900 dark:text-white bg-gray-100 dark:bg-gray-800',
-   inactive: 'text-gray-900 dark:text-white',
-   icon: {
-     base: 'flex-shrink-0 h-4 w-4 text-gray-400'
-   }
- }
-}
 
 
 const addButtonItem = {
@@ -221,50 +195,4 @@ watch(selectedSort, (newValue) => {
  .circles-row
    flex-wrap: wrap
    justify-content: flex-start
-</style>
-
-<style module lang="sass">
-.sortSelect
- :global(.u-select)
-   position: relative
-   max-width: 200px
-   transition: background-color 0.35s
-
- :global(.u-select-button)
-   background-color: white
-   border-radius: 10px
-   transition: background-color 0.35s
-   font-size: 16px
-   font-weight: 400
-   color: #1F2937
-   height: auto
-   padding: 12px 16px
-
-   &:hover
-     background-color: #E6FFFC
-
- :global(.u-select-dropdown)
-   background-color: white
-   border-radius: 10px
-   padding: 8px 0
-   margin-top: 4px
-   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)
-
- :global(.u-select-option)
-   padding: 12px 16px
-   font-size: 16px
-   font-weight: 400
-   color: #1F2937
-   transition: background-color 0.35s
-   display: flex
-   align-items: center
-   gap: 8px
-
-   &:hover
-     background-color: #E6FFFC
-
-   svg
-     width: 20px
-     height: 20px
-     color: #6B7280
 </style>
