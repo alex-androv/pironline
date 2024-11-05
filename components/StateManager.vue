@@ -10,8 +10,7 @@
         :bottomFilled="store.circles[0].bottomFilled"
       )
       .arrow-container
-        svg.arrow(width="60" height="20" viewBox="0 0 200 20")
-          path(d="M0 10 L190 10 M180 5 L190 10 L180 15" stroke="white" fill="none")
+         img(src="../assets/icons/arrow.svg")
       StateCircle(
         :id="store.circles[1].id"
         :topFilled="store.circles[1].topFilled"
@@ -39,6 +38,9 @@ const store = useCirclesStore()
 .state-manager
   padding: 2rem
 
+  @media (max-width: 480px)
+    padding: 0
+
 .section-title
   font-size: 20px
   font-weight: 700
@@ -51,13 +53,10 @@ const store = useCirclesStore()
 .circles-row
   display: flex
   align-items: center
-  gap: 2rem
+  gap: 15px
   margin-bottom: 14px
 
-.arrow-container
-  flex: 0 0 60px 
-  .arrow
-    stroke-width: 2px
+
 
 .button 
   font-size: 16px
@@ -77,6 +76,6 @@ const store = useCirclesStore()
   gap: 1rem
   @media (max-width: 640px)
     flex-direction: column
+    align-items: flex-end
     max-width: 200px
-    margin: 0 auto
 </style>

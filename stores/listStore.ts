@@ -11,9 +11,9 @@ export const useCirclesListStore = defineStore('circles-list', {
   state: (): CirclesState => ({
     circles: [
       { id: '1', label: 'Аб', topFilled: false },
-      { id: '2', label: 'Ав', topFilled: true, color: '#00b341' },
+      { id: '2', label: 'Ав', topFilled: true, color: '#33C078' },
       { id: '3', label: 'Аг', topFilled: false },
-      { id: '4', label: 'Ба', topFilled: true, color: '#00b341' },
+      { id: '4', label: 'Ба', topFilled: true, color: '#33C078' },
       { id: '5', label: 'Бб', topFilled: false },
       { id: '6', label: 'Га', topFilled: false }
     ],
@@ -70,7 +70,7 @@ export const useCirclesListStore = defineStore('circles-list', {
         id: Date.now().toString(),
         label,
         topFilled,
-        color: topFilled ? '#00b341' : undefined
+        color: topFilled ? '#33C078' : undefined
       }
 
       this.circles.push(circle)

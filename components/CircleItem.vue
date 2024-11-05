@@ -15,8 +15,8 @@ interface Props {
 const props = defineProps<Props>()
 
 const topStyles = computed(() => ({
- backgroundColor: props.topFilled ? (props.color || '#00b341') : 'transparent',
- borderColor: props.topFilled ? (props.color || '#00b341') : '#2f363d'
+ backgroundColor: props.topFilled ? (props.color || '#33C078') : 'transparent',
+ borderColor: props.topFilled ? (props.color || '#33C078') : '#33C078'
 }))
 </script>
 
@@ -60,7 +60,7 @@ const topStyles = computed(() => ({
    cursor: pointer
    
    &:hover
-     border-color: #00b341
+     border-color: #33C078
      
    span
      font-size: 1.5rem
@@ -72,7 +72,7 @@ const topStyles = computed(() => ({
    cursor: pointer
 
    &:hover
-     border-color: #00b341
+     border-color: #33C078
 
    span
      font-size: 1.5rem
